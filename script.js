@@ -1,0 +1,1 @@
+//All javascript logic for the app
