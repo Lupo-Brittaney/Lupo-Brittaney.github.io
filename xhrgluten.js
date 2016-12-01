@@ -2,10 +2,10 @@
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function(){
 	if (xhr.readyState === 4){
-		var dairyNames = JSON.parse(xhr.responseText);
+		var glutenNames = JSON.parse(xhr.responseText);
 		}
 		
 	}	
 };
-xhr.open('GET', 'dairy.json');
+xhr.open('GET', 'gluten.json');
 xhr.send();

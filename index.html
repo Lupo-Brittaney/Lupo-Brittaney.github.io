@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<meta charset="UTF-8"/>
-	<title>Allergen Alert</title>
-    <link href="style.css" type="text/css" rel="stylesheet" />	
-	<script src="script.js"></script>
-	<script src="xhrequest.js"></script>
+		<meta charset="UTF-8"/>
+		<title>Allergen Alert</title>
+		<link href="style.css" type="text/css" rel="stylesheet" />	
+		<script src="xhrgluten.js"></script>
+		<script src="xhrequest.js"></script>
 	</head>
 	<body>
 		<h1> Allergen Alert</h1>
 		<form id="input">
-			<input type="checkbox" id="dairy" value="dairy" />Dairy 
-			<input type="checkbox" id="gluten" value="gluten" />Gluten
+			<input type="checkbox" id="dairy" value="true" />Dairy 
+			<input type="checkbox" id="gluten" value="true" />Gluten
 			Ingredients: <textarea id="ingredients" rows="4" cols="50"></textarea> 
 			<input type="button" id="inputBox" value="Submit">
 		</form>
+		<div id="testArea"></div>
 		
-
-
+		
+		<script src="script.js"></script>
 	</body>
 </html>
