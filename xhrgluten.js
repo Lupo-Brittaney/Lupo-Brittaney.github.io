@@ -4,8 +4,6 @@ xhr.onreadystatechange = function(){
 	if (xhr.readyState === 4){
 		var glutenNames = JSON.parse(xhr.responseText);
 		}
-		
-	}	
 };
 xhr.open('GET', 'gluten.json');
 xhr.send();
