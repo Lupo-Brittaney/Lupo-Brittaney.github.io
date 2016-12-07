@@ -23,7 +23,7 @@ inputBox.addEventListener("click", function(){
 			}
 		
 		};	
-		xhr.open('GET', 'dairy.json');
+		xhr.open('GET', 'allergen.json');
 		xhr.send();
 	};
 	if (document.getElementById("gluten").checked){
@@ -38,7 +38,7 @@ inputBox.addEventListener("click", function(){
 			}
 		
 		};	
-		xhr.open('GET', 'gluten.json');
+		xhr.open('GET', 'allergen.json');
 		xhr.send();
 	};
 	if (document.getElementById("gluten").checked == false && document.getElementById("dairy").checked==false){

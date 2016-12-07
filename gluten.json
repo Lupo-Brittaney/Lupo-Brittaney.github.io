@@ -1,6 +1,7 @@
 [
 {
-	"wheat"
+	"allergen": "gluten",
+	"ingredient" :"wheat"
 },
 {
 	"barley"
