@@ -14,17 +14,42 @@ inputBox.addEventListener("click", function(){
 		//run test function
 		document.getElementById("testArea").innerHTML = glutenNames;
 		alert("dairy");
+		//This is where the arrays that are saved in JSON files are requested and returned to the app
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function(){
+			if (xhr.readyState === 4){
+				var dairyNames = JSON.parse(xhr.responseText);
+				compareFunction(dairyNames);
+			}
+		
+		};	
+		xhr.open('GET', 'dairy.json');
+		xhr.send();
 	};
 	if (document.getElementById("gluten").checked){
 		//run test
 		alert("gluten");
+		//This is where the arrays that are saved in JSON files are requested and returned to the app
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function(){
+			if (xhr.readyState === 4){
+				var glutenNames = JSON.parse(xhr.responseText);
+				compareFunction(glutenNames);
+			}
+		
+		};	
+		xhr.open('GET', 'gluten.json');
+		xhr.send();
 	};
 	if (document.getElementById("gluten").checked == false && document.getElementById("dairy").checked==false){
 		document.getElementById("testArea").innerHTML = "no allergens checked";
 	};
 	
 
-	
+	function compareFunction(ingNames){
+		alert(ingNames);
+		
+	};
 	
 });
 
