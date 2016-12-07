@@ -1,19 +1,18 @@
-//All javascript logic for the app
-
-
-
+//Brittaney's Javascript
 
 inputBox.addEventListener("click", function(){
 	//get string from textarea
-	var str= document.getElementById("ingredients").value;
+	var str= document.getElementById("ingredients").value.toLowerCase();
+	//alert if there are noingredients in the text area
 	if (str==""){
-		document.getElementById("testArea").innerHTML = "no ingredients listed";	
+		alert("No ingredients listed");	
 	}
 	//turn string into array
 	var ingArray = new Array();
 	ingArray=str.split(",");
 	
 	var message ="";
+	
 	//check for dairy ingredtients
 	if (document.getElementById("dairy").checked){
 		//This is where the arrays that are saved in JSON files are requested and returned to the app
@@ -21,7 +20,20 @@ inputBox.addEventListener("click", function(){
 		xhr.onreadystatechange = function(){
 			if (xhr.readyState === 4){
 				var allergNames = JSON.parse(xhr.responseText);
-				compareFunction(allergNames, "dairy");
+				//compareFunction(allergNames, "dairy");
+				for(var i=0; i<allergNames.length; i++){
+					if (allergNames[i].allergen=== "dairy"){
+						for (var j=0; j<ingArray.length; j++){
+							if ((ingArray[j].indexOf(allergNames[i].ingredient))!=-1){
+								message+= "Dairy: "+ ingArray[j] +"<br>";
+							}
+					
+						}
+					document.getElementById("dairyArea").innerHTML = message;
+					}
+			
+			
+				}
 			}	
 		};
 		xhr.open('GET', 'allergenList.json');
@@ -37,7 +49,20 @@ inputBox.addEventListener("click", function(){
 		xhr.onreadystatechange = function(){
 			if (xhr.readyState === 4){
 				var allergNames = JSON.parse(xhr.responseText);
-				compareFunction(allergNames, "gluten");
+				//compareFunction(allergNames, "gluten");
+				for(var i=0; i<allergNames.length; i++){
+					if (allergNames[i].allergen=== "gluten"){
+						for (var j=0; j<ingArray.length; j++){
+							if ((ingArray[j].indexOf(allergNames[i].ingredient))!=-1){
+								message+= "Gluten: "+ ingArray[j] +"<br>";
+							}
+					
+						}
+					document.getElementById("glutenArea").innerHTML = message;
+					}
+			
+			
+				}
 			}
 		
 		};	
@@ -45,34 +70,8 @@ inputBox.addEventListener("click", function(){
 		xhr.send();
 		
 	};
+	//if there is no boxes chexked
 	if (document.getElementById("gluten").checked == false && document.getElementById("dairy").checked==false){
-		document.getElementById("testArea").innerHTML = "no allergens checked";
+		alert("No allergens were checked.");
 	};
-	
-
-	function compareFunction(allergNames, allergen){
-		
-		for(var i=0; i<allergNames.length; i++){
-			if (allergNames[i].allergen=== allergen){
-				for (var j=0; j<ingArray.length; j++){
-					if ((ingArray[j].indexOf(allergNames[i].ingredient))!=-1){
-					message+= allergen + " : "+ ingArray[j] +"<br>";
-					}
-					
-				}
-			document.getElementById("testArea").innerHTML = message;
-			}
-			
-			
-		}
-		
-		
-	};
-	
-	
 });
-
-
-
-
-
