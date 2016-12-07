@@ -38,7 +38,7 @@ inputBox.addEventListener("click", function(){
 			}
 		
 		};	
-		xhr.open('GET', 'allergen.json');
+		xhr.open('GET', 'allergenList.json');
 		xhr.send();
 	};
 	if (document.getElementById("gluten").checked == false && document.getElementById("dairy").checked==false){
