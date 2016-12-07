@@ -9,7 +9,7 @@
 		};	
 		xhr.open('GET', 'allergenList.json');
 		xhr.send();
-	};
+
 
 
 inputBox.addEventListener("click", function(){
@@ -28,7 +28,7 @@ inputBox.addEventListener("click", function(){
 		//document.getElementById("testArea").innerHTML = glutenNames;
 		alert("dairy");
 		//This is where the arrays that are saved in JSON files are requested and returned to the app
-	
+	};
 	if (document.getElementById("gluten").checked){
 		//run test
 		alert("gluten");
