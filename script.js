@@ -39,9 +39,23 @@ inputBox.addEventListener("click", function(){
 		xhr.open('GET', 'allergenList.json');
 		xhr.send();
 		
-	};
+	} else{
+		document.getElementById("dairyArea").innerHTML = "";
+		
+	}
+});	
+inputBox.addEventListener("click", function(){
+	//get string from textarea
+	var str= document.getElementById("ingredients").value.toLowerCase();
+	//alert if there are noingredients in the text area
+	if (str==""){
+		alert("No ingredients listed");	
+	}
+	//turn string into array
+	var ingArray = new Array();
+	ingArray=str.split(",");
 	
-	
+	var message ="";
 	//check for gluten ingredients
 	if (document.getElementById("gluten").checked){
 		//This is where the arrays that are saved in JSON files are requested and returned to the app
@@ -69,9 +83,13 @@ inputBox.addEventListener("click", function(){
 		xhr.open('GET', 'allergenList.json');
 		xhr.send();
 		
-	};
+	}
+	else{
+		document.getElementById("glutenArea").innerHTML = "";
+		
+	}
 	//if there is no boxes chexked
 	if (document.getElementById("gluten").checked == false && document.getElementById("dairy").checked==false){
 		alert("No allergens were checked.");
-	};
+	}
 });
