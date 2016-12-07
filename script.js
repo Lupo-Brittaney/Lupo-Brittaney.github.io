@@ -30,7 +30,7 @@ inputBox.addEventListener("click", function(){
 					
 						}
 					if (message===""){
-						message= "No dairy allergens found";
+						message= "Dairy: No allergens found";
 					}
 					document.getElementById("dairyArea").innerHTML = message;
 					}
@@ -76,7 +76,7 @@ inputBox.addEventListener("click", function(){
 					
 						}
 					if (message===""){
-						message= "No gluten allergens found";
+						message= "Gluten: No allergens found";
 					}
 					document.getElementById("glutenArea").innerHTML = message;
 					}
