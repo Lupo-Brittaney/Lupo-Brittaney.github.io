@@ -12,7 +12,7 @@ inputBox.addEventListener("click", function(){
 	
 	if (document.getElementById("dairy").checked){
 		//run test function
-		document.getElementById("testArea").innerHTML = glutenNames;
+		//document.getElementById("testArea").innerHTML = glutenNames;
 		alert("dairy");
 		//This is where the arrays that are saved in JSON files are requested and returned to the app
 		var xhr = new XMLHttpRequest();
