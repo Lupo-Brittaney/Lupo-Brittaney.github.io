@@ -13,41 +13,64 @@ inputBox.addEventListener("click", function(){
 	var ingArray = new Array();
 	ingArray=str.split(",");
 	
-	
+	var message ="";
+	//check for dairy ingredtients
 	if (document.getElementById("dairy").checked){
-		//run test function
-		//document.getElementById("testArea").innerHTML = glutenNames;
-		alert("dairy");
-		//This is where the arrays that are saved in JSON files are requested and returned to the app
-	};
-	if (document.getElementById("gluten").checked){
-		//run test
-		alert("gluten");
 		//This is where the arrays that are saved in JSON files are requested and returned to the app
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function(){
 			if (xhr.readyState === 4){
-				var glutenNames = JSON.parse(xhr.responseText);
-				compareFunction(glutenNames);
+				var allergNames = JSON.parse(xhr.responseText);
+				compareFunction(allergNames, "dairy");
+			}	
+		};
+		xhr.open('GET', 'allergenList.json');
+		xhr.send();
+		
+	};
+	
+	
+	//check for gluten ingredients
+	if (document.getElementById("gluten").checked){
+		//This is where the arrays that are saved in JSON files are requested and returned to the app
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function(){
+			if (xhr.readyState === 4){
+				var allergNames = JSON.parse(xhr.responseText);
+				compareFunction(allergNames, "gluten");
 			}
 		
 		};	
 		xhr.open('GET', 'allergenList.json');
 		xhr.send();
+		
 	};
 	if (document.getElementById("gluten").checked == false && document.getElementById("dairy").checked==false){
 		document.getElementById("testArea").innerHTML = "no allergens checked";
 	};
 	
 
-	function compareFunction(ingNames){
-		alert(ingNames);
+	function compareFunction(allergNames, allergen){
+		
+		for(var i=0; i<allergNames.length; i++){
+			if (allergNames[i].allergen=== allergen){
+				for (var j=0; j<ingArray.length; j++){
+					if ((ingArray[j].indexOf(allergNames[i].ingredient))!=-1){
+					message+= allergen + " : "+ ingArray[j] +"<br>";
+					}
+					
+				}
+			document.getElementById("testArea").innerHTML = message;
+			}
+			
+			
+		}
+		
 		
 	};
 	
+	
 });
-
-
 
 
 
