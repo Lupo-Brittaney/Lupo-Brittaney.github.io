@@ -4,19 +4,24 @@
 	"ingredient" :"wheat"
 },
 {
-	"barley"
+	"allergen": "gluten",
+	"ingredient" :"barley"
 },
 {
-	"rye"
+	"allergen": "gluten",
+	"ingredient" :"rye"
 },
 {
-	"malt"
+	"allergen": "gluten",
+	"ingredient" :"malt"
 },
 {
-	"triticale"
+	"allergen": "gluten",
+	"ingredient" :"triticale"
 },
 {
-	"brewer's yeast"
+	"allergen": "gluten",
+	"ingredient" :"brewer's yeast"
 }
 
 ]
