@@ -29,14 +29,14 @@ inputBox.addEventListener("click", function(){
 							}
 					
 						}
-					if (message===""){
-						message= "Dairy: No allergens found";
+					
 					}
-					document.getElementById("dairyArea").innerHTML = message;
-					}
-			
 			
 				}
+				if (message===""){
+					message= "No dairy allergens found";
+				}
+				document.getElementById("dairyArea").innerHTML = message;
 			}	
 		};
 		xhr.open('GET', 'allergenList.json');
@@ -75,14 +75,16 @@ inputBox.addEventListener("click", function(){
 							}
 					
 						}
-					if (message===""){
-						message= "Gluten: No allergens found";
+					
 					}
+			
+				
 					document.getElementById("glutenArea").innerHTML = message;
-					}
-			
-			
 				}
+				if (message===""){
+					message= "No gluten allergens found";
+				}
+				document.getElementById("glutenArea").innerHTML = message;	
 			}
 		
 		};	
