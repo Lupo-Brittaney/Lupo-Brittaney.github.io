@@ -101,3 +101,79 @@ inputBox.addEventListener("click", function(){
 		alert("No allergens were checked.");
 	}
 });
+
+//Alex's part of the code
+window.onload = function() {
+	if (localStorage.getItem("dairy") != null) {
+		document.getElementById("dairy").checked = true;
+	}
+	else {
+		document.getElementById("dairy").checked = false;
+	}
+	if (localStorage.getItem("gluten") != null) {
+		document.getElementById("gluten").checked = true;
+	}
+	else {
+		document.getElementById("gluten").checked = false;
+	}
+};
+			
+function submit() {
+	// get reference to required checkbox
+	var dairyBox = document.getElementById("dairy");
+	var glutenBox = document.getElementById("gluten");
+	
+	if ( !dairyBox.checked && !glutenBox.checked ) { // if it's not checked
+		// display error info (generally not an alert these days)
+		alert( 'Please select either dairy, gluten, or both.' );
+		localStorage.clear();
+		return false; // don't submit
+	}
+	else if ( dairyBox.checked && !glutenBox.checked ) {			
+		var dairyAllergen = "dairy";		
+		localStorage.setItem("dairy", dairyAllergen);
+		  
+		localStorage.removeItem("gluten");
+	}
+	else if ( !dairyBox.checked && glutenBox.checked ) {
+		var glutenAllergen = "gluten";
+		localStorage.setItem("gluten", glutenAllergen);
+		
+		localStorage.removeItem("dairy");
+	}
+	else {
+		var dairyAllergen = "dairy";
+		var glutenAllergen = "gluten";
+		
+		localStorage.setItem("dairy", dairyAllergen);
+		localStorage.setItem("gluten", glutenAllergen);
+	}
+	
+	if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") == null ) {
+		alert("what am I doing?");
+	}
+	else if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") != null ) {
+		alert(localStorage.getItem("gluten"));
+	}
+	else if ( localStorage.getItem("dairy") != null && localStorage.getItem("gluten") == null ) {
+		alert(localStorage.getItem("dairy"));
+	}
+	else if ( localStorage.getItem("dairy") != null && localStorage.getItem("gluten") != null ) {
+		alert(localStorage.getItem("dairy") + " " + localStorage.getItem("gluten"));
+	}
+};
+			
+function showStorage() {
+	if ( localStorage.getItem("dairy") != null ) {
+		alert(localStorage.getItem("dairy"));
+	}
+	else {
+		alert("Dairy is not in localStorage");
+	}
+	if ( localStorage.getItem("gluten") != null ) {
+		alert(localStorage.getItem("gluten"));
+	}
+	else {
+		alert("Gluten is not in localStorage");
+	}
+}

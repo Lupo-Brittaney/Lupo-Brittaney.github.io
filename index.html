@@ -11,13 +11,16 @@
 			<h1 class="centerText"> Allergen Alert</h1>
 			<form id="input">
 				<div id="centerDiv">
-					<input type="checkbox" id="dairy" value="true" />
+					<input type="checkbox" id="dairy" value="dairy" onclick="addDairy()" />
 					<label for="dairy"><span></span></label>
-					<input type="checkbox" id="gluten" value="true" />
+					<input type="checkbox" id="gluten" value="gluten" onclick="addGluten() "/>
 					<label for="gluten"><span></span></label>
 				</div>
 				Ingredients: <textarea id="ingredients" rows="4" cols="50"></textarea> <br>
-				<input type="button" id="submit" value="Submit">
+				
+				<button id="submit" value="Submit" onclick="submit()" />Submit</button><br><br>
+				<input type="button" class="otherButtons" value="Check if Gluten and Dairy Are in Local Storage" onclick="showStorage()" /><br><br>
+				<input type="button" class="otherButtons" value="Clear Local Storage" onclick="localStorage.clear()" />
 			</form>
 			<!-- div to place results from dairy comparison-->
 			<div id="dairyArea"></div>
