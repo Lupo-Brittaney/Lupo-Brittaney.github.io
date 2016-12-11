@@ -125,7 +125,7 @@ function submit() {
 	
 	if ( !dairyBox.checked && !glutenBox.checked ) { // if it's not checked
 		// display error info (generally not an alert these days)
-		alert( 'Please select either dairy, gluten, or both.' );
+		document.getElementById("dairyArea").innerHTML = "Please select either dairy, gluten, or both.";
 		localStorage.clear();
 		return false; // don't submit
 	}
@@ -149,7 +149,7 @@ function submit() {
 		localStorage.setItem("gluten", glutenAllergen);
 	}
 	
-	if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") == null ) {
+	/*if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") == null ) {
 		alert("what am I doing?");
 	}
 	else if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") != null ) {
@@ -160,10 +160,10 @@ function submit() {
 	}
 	else if ( localStorage.getItem("dairy") != null && localStorage.getItem("gluten") != null ) {
 		alert(localStorage.getItem("dairy") + " " + localStorage.getItem("gluten"));
-	}
+	}*/
 };
 			
-function showStorage() {
+/*function showStorage() {
 	if ( localStorage.getItem("dairy") != null ) {
 		alert(localStorage.getItem("dairy"));
 	}
@@ -176,4 +176,4 @@ function showStorage() {
 	else {
 		alert("Gluten is not in localStorage");
 	}
-}
+}*/
