@@ -162,7 +162,7 @@ inputBox.addEventListener("click", function(){
 	else if ( localStorage.getItem("dairy") != null && localStorage.getItem("gluten") != null ) {
 		alert(localStorage.getItem("dairy") + " " + localStorage.getItem("gluten"));
 	}
-)};
+});
 			
 function showStorage() {
 	if ( localStorage.getItem("dairy") != null ) {
