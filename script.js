@@ -150,18 +150,18 @@ inputBox.addEventListener("click", function(){
 		localStorage.setItem("gluten", glutenAllergen);
 	}
 	
-	if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") == null ) {
-		alert("what am I doing?");
-	}
-	else if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") != null ) {
-		alert(localStorage.getItem("gluten"));
-	}
-	else if ( localStorage.getItem("dairy") != null && localStorage.getItem("gluten") == null ) {
-		alert(localStorage.getItem("dairy"));
-	}
-	else if ( localStorage.getItem("dairy") != null && localStorage.getItem("gluten") != null ) {
-		alert(localStorage.getItem("dairy") + " " + localStorage.getItem("gluten"));
-	}
+//	if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") == null ) {
+//		alert("what am I doing?");
+//	}
+//	else if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") != null ) {
+//		alert(localStorage.getItem("gluten"));
+//	}
+//	else if ( localStorage.getItem("dairy") != null && localStorage.getItem("gluten") == null ) {
+//		alert(localStorage.getItem("dairy"));
+//	}
+//	else if ( localStorage.getItem("dairy") != null && localStorage.getItem("gluten") != null ) {
+//		alert(localStorage.getItem("dairy") + " " + localStorage.getItem("gluten"));
+//	}
 });
 			
 function showStorage() {
