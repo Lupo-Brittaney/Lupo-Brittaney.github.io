@@ -118,7 +118,8 @@ window.onload = function() {
 	}
 };
 			
-function submit() {
+//function submit() {
+inputBox.addEventListener("click", function(){
 	// get reference to required checkbox
 	var dairyBox = document.getElementById("dairy");
 	var glutenBox = document.getElementById("gluten");
@@ -160,8 +161,13 @@ function submit() {
 	}
 	else if ( localStorage.getItem("dairy") != null && localStorage.getItem("gluten") != null ) {
 		alert(localStorage.getItem("dairy") + " " + localStorage.getItem("gluten"));
+<<<<<<< HEAD
 	}*/
 };
+=======
+	}
+});
+>>>>>>> origin/master
 			
 /*function showStorage() {
 	if ( localStorage.getItem("dairy") != null ) {
@@ -176,4 +182,8 @@ function submit() {
 	else {
 		alert("Gluten is not in localStorage");
 	}
+<<<<<<< HEAD
 }*/
+=======
+};
+>>>>>>> origin/master
