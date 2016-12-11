@@ -77,7 +77,7 @@ input[id="gluten"]:checked + label span {
 	height: 100px;
 }
 
-#submit {
+#inputBox {
 	display: block;
 	font-size: 200%;
 	margin: 0 auto;
