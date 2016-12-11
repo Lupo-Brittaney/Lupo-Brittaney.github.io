@@ -126,7 +126,7 @@ inputBox.addEventListener("click", function(){
 	
 	if ( !dairyBox.checked && !glutenBox.checked ) { // if it's not checked
 		// display error info (generally not an alert these days)
-		alert( 'Please select either dairy, gluten, or both.' );
+		//alert( 'Please select either dairy, gluten, or both.' );
 		localStorage.clear();
 		return false; // don't submit
 	}
