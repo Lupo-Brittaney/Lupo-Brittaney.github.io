@@ -136,23 +136,29 @@ input[id="gluten"]:checked + label span {
 }
 
 #glutenArea {
-	background-color: white;
 	display: block;
+	padding: 20px 15px;
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 20px;
+	text-align: center;
 	margin: 0 auto;
 	height: 100px;
 	width: 40%;
-	font-size: 300%;
+	font-size: 350%;
 	visibility: hidden;
 	transition: all 1s;
 }
 
 #dairyArea {
-	background-color: white;
 	display: block;
+	padding: 20px 15px;
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 20px;
+	text-align: center;
 	margin: 0 auto;
 	height: 100px;
 	width: 40%;
-	font-size: 300%;
+	font-size: 350%;
 	visibility: hidden;
 	transition: all 1s;
 }
