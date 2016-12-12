@@ -33,7 +33,9 @@ inputBox.addEventListener("click", function(){
 				if (message===""){
 					message= "No dairy allergens found";
 				}
-				document.getElementById("dairyArea").innerHTML = message;
+				var div1 = document.getElementById("dairyArea");
+				div1.innerHTML = message;
+	    		div1.style.backgroundColor = div1.style.backgroundColor == "#ffe6e1";
 			}	
 		};
 		xhr.open('GET', 'allergenList.json');
@@ -78,8 +80,10 @@ inputBox.addEventListener("click", function(){
 				if (message===""){
 					message= "No gluten allergens found";
 				}
-				document.getElementById("glutenArea").innerHTML = message;	
-			}
+
+				var div2 = document.getElementById("glutenArea");
+				div2.innerHTML = message;
+	    		div2.style.backgroundColor = div1.style.backgroundColor == "#ffe6e1";			}
 		};	
 
 		xhr.open('GET', 'allergenList.json');
