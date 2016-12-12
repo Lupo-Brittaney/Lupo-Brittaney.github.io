@@ -51,9 +51,9 @@ inputBox.addEventListener("click", function(){
 	//get string from textarea
 	var str= document.getElementById("ingredients").value.toLowerCase();
 	//alert if there are noingredients in the text area
-	if (str==""){
-		alert("No ingredients listed");	
-	}
+	//if (str==""){
+	//	alert("No ingredients listed");	
+	//}
 	//turn string into array
 	var ingArray = new Array();
 	ingArray=str.split(",");
