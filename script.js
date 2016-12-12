@@ -115,10 +115,14 @@ window.onload = function() {
 //function submit() {
 inputBox.addEventListener("click", function(){
 	//unhide the reslults
-	function resultVisibility(id) {
-	    var div = document.getElementById(id);
-	    div.style.visibility = div.style.visibility == "visible" ? "hidden" : "visible";
-	}
+	    var div1 = document.getElementById("glutenArea");
+	    div1.style.transition = div1.style.transition == "all 2s";
+	    div1.style.visibility = div1.style.visibility == "visible" ? "hidden" : "visible";
+	    
+	    var div2 = document.getElementById("dairyArea");
+	    div2.style.transition = div2.style.transition == "all 2s";
+	    div2.style.visibility = div2.style.visibility == "visible" ? "hidden" : "visible";
+	    
 	// get reference to required checkbox
 	var dairyBox = document.getElementById("dairy");
 	var glutenBox = document.getElementById("gluten");
