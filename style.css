@@ -152,7 +152,7 @@ input[id="gluten"]:checked + label span {
 	font-size: 350%;
 	visibility: hidden;
 	animation-name: fadeIn;
-	animation-duration: 5s;
+	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-play-state: paused;
 }
