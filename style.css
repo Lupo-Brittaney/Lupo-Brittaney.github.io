@@ -1,5 +1,4 @@
 body {
-	
 	background-image: URL('possible_background01.jpg');
 	background-size: 200%;
 	background-repeat: no-repeat;
@@ -53,15 +52,15 @@ h2 {
 }
 
 input[type="checkbox"] {
-    display:none;
+    	display:none;
 }
 
 input[id="dairy"] + label span {
-    display:inline-block;
-    height:130px;
+	display:inline-block;
+	height:130px;
 	width: 130px;
 	margin: 0 65px 0 0;
-    background:URL('dairy_icon.png') left top no-repeat;
+	background:URL('dairy_icon.png') left top no-repeat;
 }
 
 input[id="dairy"]:checked + label span {
@@ -69,9 +68,9 @@ input[id="dairy"]:checked + label span {
 }
 
 input[id="gluten"] + label span {
-    display: inline-block;
-    height:130px;
-    width: 130px;
+	display: inline-block;
+	height:130px;
+	width: 130px;
 	margin: 0 0 0 65px;
 	background:URL('gluten_icon.png') left top no-repeat;
 }
@@ -110,8 +109,8 @@ input[id="gluten"]:checked + label span {
 	height: 100px;
 	color: white;
 	padding: 8px 20px;
-    text-decoration: none;
-    font-family: sans-serif;
+	text-decoration: none;
+	font-family: sans-serif;
 }
 
 #inputBox:focus, #inputBox:hover {
@@ -121,8 +120,8 @@ input[id="gluten"]:checked + label span {
 	width: 40%;
 	height: 100px;
 	transition: all .5s;
-    background-color: white;
-    color: #000;
+	background-color: white;
+	color: #000;
 }
 
 #ingLabel {
@@ -142,6 +141,7 @@ input[id="gluten"]:checked + label span {
 	border-radius: 20px;
 	text-align: center;
 	margin: 0 auto;
+	padding: 10px;
 	height: 100px;
 	width: 40%;
 	font-size: 350%;
@@ -155,7 +155,8 @@ input[id="gluten"]:checked + label span {
 	background-color: rgba(255,255,255,0.9);
 	border-radius: 20px;
 	text-align: center;
-	margin: 0 auto;
+	margin: 0 auto 20px auto;
+	padding: 10px;
 	height: 100px;
 	width: 40%;
 	font-size: 350%;
