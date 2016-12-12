@@ -164,6 +164,16 @@ inputBox.addEventListener("click", function(){
 		localStorage.setItem("dairy", dairyAllergen);
 		localStorage.setItem("gluten", glutenAllergen);
 	}
+	
+	function fadeIn() {
+		var div = document.getElementById("dairyArea");
+
+		if (div.style.animationPlayState != "running")
+			div.style.animationPlayState = "running";
+		else {
+			div.style.animationPlayState="paused";
+		}
+	}
 });
 
 	/*if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") == null ) {
