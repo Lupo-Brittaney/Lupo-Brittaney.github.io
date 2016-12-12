@@ -29,17 +29,16 @@ inputBox.addEventListener("click", function(){
 							}
 						}
 					}
-					document.getElementById("dairyArea").innerHTML = message;
+					
 				}
 				if (message===""){
 					message= "No dairy allergens found";
 				}
+				document.getElementById("dairyArea").innerHTML = message;
 			var div1 = document.getElementById("dairyArea");
-			div1.innerHTML = message;
-	    		div1.style.backgroundColor = div1.style.backgroundColor == "#ffe6e1";
+	 		div1.style.backgroundColor = div1.style.backgroundColor == "#ffe6e1";
 			//unhide the reslults
-	    		var div1 = document.getElementById("glutenArea");
-	    		div1.style.transition = div1.style.transition == "all 2s";
+	      		div1.style.transition = div1.style.transition == "all 2s";
 				if(div1.style.visability = "hidden"){
 				    div1.style.visibility = "visible" ;
 				}
@@ -92,7 +91,6 @@ inputBox.addEventListener("click", function(){
 			var div2 = document.getElementById("glutenArea");
 			div2.innerHTML = message;
 	    		div2.style.backgroundColor = div2.style.backgroundColor == "#ffe6e1";
-			var div2 = document.getElementById("dairyArea");
 			div2.style.transition = div2.style.transition == "all 2s";
 	    			if(div2.style.visability = "hidden"){
 	    				div2.style.visibility = "visible" ;
