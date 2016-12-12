@@ -39,7 +39,7 @@ inputBox.addEventListener("click", function(){
 	 		div1.style.backgroundColor = div1.style.backgroundColor == "#ffe6e1";
 			//unhide the reslults
 	      		div1.style.transition = div1.style.transition == "all 2s";
-				if(div1.style.visability = "hidden"){
+				if(div1.style.visibility = "hidden"){
 				    div1.style.visibility = "visible" ;
 				}
 			}	
@@ -48,7 +48,7 @@ inputBox.addEventListener("click", function(){
 		xhr.send();
 	} else{
 		document.getElementById("dairyArea").innerHTML = "";
-		document.getElementById("dairyArea").style.visability = "hidden";
+		document.getElementById("dairyArea").style.visibility = "hidden";
 	}
 	}
 });	
@@ -93,7 +93,7 @@ inputBox.addEventListener("click", function(){
 			div2.innerHTML = message;
 	    		div2.style.backgroundColor = div2.style.backgroundColor == "#ffe6e1";
 			div2.style.transition = div2.style.transition == "all 2s";
-	    			if(div2.style.visability = "hidden"){
+	    			if(div2.style.visibility = "hidden"){
 	    				div2.style.visibility = "visible" ;
 				}
 	    		}
@@ -105,7 +105,7 @@ inputBox.addEventListener("click", function(){
 
 	else{
 		document.getElementById("glutenArea").innerHTML = ""
-		document.getElementById("glutenArea").style.visability = "hidden";
+		document.getElementById("glutenArea").style.visibility = "hidden";
 	}
 
 	
