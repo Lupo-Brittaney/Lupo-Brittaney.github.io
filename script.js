@@ -81,7 +81,7 @@ inputBox.addEventListener("click", function(){
 				document.getElementById("glutenArea").innerHTML = message;	
 			}
 		};	
-		
+
 		xhr.open('GET', 'allergenList.json');
 		xhr.send();
 	}
@@ -114,6 +114,11 @@ window.onload = function() {
 			
 //function submit() {
 inputBox.addEventListener("click", function(){
+	//unhide the reslults
+	function resultVisibility(id) {
+	    var div = document.getElementById(id);
+	    div.style.visibility = div.style.visibility == "visible" ? "hidden" : "visible";
+	}
 	// get reference to required checkbox
 	var dairyBox = document.getElementById("dairy");
 	var glutenBox = document.getElementById("gluten");
@@ -145,7 +150,7 @@ inputBox.addEventListener("click", function(){
 		localStorage.setItem("gluten", glutenAllergen);
 	}
 });
-	
+
 	/*if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") == null ) {
 		alert("what am I doing?");
 	}

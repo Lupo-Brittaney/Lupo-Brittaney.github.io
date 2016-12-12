@@ -103,12 +103,12 @@ input[id="gluten"]:checked + label span {
 	background:none;
 	border:none;
 	display: block;
-	background-color: white;
+	background-color: #65728f;
 	font-size: 250%;
 	margin: 0 auto;
 	width: 40%;
 	height: 100px;
-	color: #000;
+	color: white;
 	padding: 8px 20px;
     text-decoration: none;
     font-family: sans-serif;
@@ -121,8 +121,8 @@ input[id="gluten"]:checked + label span {
 	width: 40%;
 	height: 100px;
 	transition: all .5s;
-    background-color: #555;
-    color: white;
+    background-color: white;
+    color: #000;
 }
 
 #ingLabel {
@@ -142,7 +142,6 @@ input[id="gluten"]:checked + label span {
 	height: 100px;
 	width: 40%;
 	font-size: 300%;
-	visibility: visible;
 }
 
 #dairyArea {
@@ -152,5 +151,5 @@ input[id="gluten"]:checked + label span {
 	height: 100px;
 	width: 40%;
 	font-size: 300%;
-	visibility: visible;
 }
+
