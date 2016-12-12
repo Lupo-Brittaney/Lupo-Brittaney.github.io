@@ -11,6 +11,13 @@
 	<body>
 		<div id="backgroundBlender">
 			<h1 class="centerText"> Allergen Check</h1>
+			
+			<p id="explanation">Avoiding foods that contain ingredients that you're 
+			allergic to is important, so we're here to make it easier to determine what 
+			foods allergens. Select the milk bottle for dairy and the wheat icon for 
+			gluten, then type the specific ingredients you want to identify, click 
+			submit, and we'll let you know what ingredients contain allergens!</p>
+			
 			<form id="input">
 				<div id="centerDiv">
 					<input type="checkbox" id="dairy" value="dairy"  />
@@ -18,7 +25,10 @@
 					<input type="checkbox" id="gluten" value="gluten" />
 					<label for="gluten"><span></span></label>
 				</div>
-				Ingredients: <textarea id="ingredients" rows="3" cols="40"></textarea> <br>
+				
+				<h2>Ingredients</h2> 
+				
+				<textarea id="ingredients" rows="3" cols="40"></textarea> <br>
 
 				<input type="button" id="inputBox" value="Submit"><br><br>
 				<!--<input type="button" class="otherButtons" value="Check if Gluten and Dairy Are in Local Storage" onclick="showStorage()" /><br><br>

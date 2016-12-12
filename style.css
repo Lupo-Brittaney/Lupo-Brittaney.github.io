@@ -19,14 +19,25 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	color: #ffffff;
-	background-color: #65728f;
 	font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
-	font-size: 350%;
-	text-shadow: 5px 5px #000000;
 }
 
 h1 {
+	background-color: #65728f;
 	font-family: 'Raleway', sans-serif;
+	font-size: 350%;
+	padding: 0 0 5px 0;
+	text-align: center;
+	text-shadow: 1px 1px black;
+}
+
+h2 {
+	color: black;
+	width: 130px;
+	background-color: rgba(245,245,245,0.9);
+	border-radius: 10px 10px 0 0;
+	margin: 0 0 0 100px;
+	padding: 0 10px;
 }
 
 .centerText {
@@ -67,6 +78,17 @@ input[id="gluten"]:checked + label span {
 	background:URL('gluten_icon_checked.png') no-repeat;
 } 
 
+#explanation {
+	display: block;
+	margin: 0 auto 50px auto;
+	width: 75%;
+	padding: 5px 10px;
+	font-size: 200%;
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 10px;
+	text-align: center;
+}
+
 #ingredients {
 	display: block;
 	font-size: 400%;
@@ -77,21 +99,24 @@ input[id="gluten"]:checked + label span {
 
 #inputBox {
 	display: block;
+	font-size: 300%;
 	margin: 0 auto;
-	width: 60%;
+	width: 40%;
 	height: 100px;
 }
 
 #glutenArea {
 	background-color: white;
-	display: inline;
+	display: block;
+	margin: 0 auto;
 	height: 100px;
 	width: 25%;
 }
 
 #dairyArea {
 	background-color: white;
-	display: inline;
+	display: block;
+	margin: 0 auto;
 	height: 100px;
 	width: 25%;
 }
