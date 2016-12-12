@@ -92,7 +92,9 @@ inputBox.addEventListener("click", function(){
 	    		div2.style.backgroundColor = div2.style.backgroundColor == "#ffe6e1";
 				 var div2 = document.getElementById("dairyArea");
 	    div2.style.transition = div2.style.transition == "all 2s";
-	    div2.style.visibility = div2.style.visibility == "visible" ? "hidden" : "visible";
+	    if(div1.style.visability = "hidden"){
+	    div1.style.visibility = "visible" ;
+			}
 	    	}
 		};	
 
