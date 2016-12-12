@@ -171,9 +171,8 @@ input[id="gluten"]:checked + label span {
 	visibility: hidden;
 	animation-name: fadeIn;
 	animation-duration: 2s;
+	animation-play-state: paused;
 	animation-iteration-count: 1;
-	animation-play-state: running;
-	transition: all 1s;
 }
 
 @keyframes fadeIn {
