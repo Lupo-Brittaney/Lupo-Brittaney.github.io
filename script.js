@@ -83,7 +83,7 @@ inputBox.addEventListener("click", function(){
 
 				var div2 = document.getElementById("glutenArea");
 				div2.innerHTML = message;
-	    		div2.style.backgroundColor = div.style.backgroundColor == "#ffe6e1";
+	    		div2.style.backgroundColor = div2.style.backgroundColor == "#ffe6e1";
 	    	}
 		};	
 
