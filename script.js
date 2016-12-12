@@ -27,11 +27,8 @@ inputBox.addEventListener("click", function(){
 							if ((ingArray[j].indexOf(allergNames[i].ingredient))!=-1){
 								message+= "Dairy: "+ ingArray[j] +"<br>";
 							}
-					
 						}
-					
 					}
-			
 				}
 				if (message===""){
 					message= "No dairy allergens found";
@@ -41,10 +38,8 @@ inputBox.addEventListener("click", function(){
 		};
 		xhr.open('GET', 'allergenList.json');
 		xhr.send();
-		
 	} else{
 		document.getElementById("dairyArea").innerHTML = "";
-		
 	}
 });	
 inputBox.addEventListener("click", function(){
@@ -77,7 +72,6 @@ inputBox.addEventListener("click", function(){
 						}
 					
 					}
-			
 				
 					document.getElementById("glutenArea").innerHTML = message;
 				}
@@ -86,16 +80,16 @@ inputBox.addEventListener("click", function(){
 				}
 				document.getElementById("glutenArea").innerHTML = message;	
 			}
-		
 		};	
+		
 		xhr.open('GET', 'allergenList.json');
 		xhr.send();
-		
 	}
+
 	else{
 		document.getElementById("glutenArea").innerHTML = "";
-		
 	}
+
 	//if there is no boxes chexked
 	if (document.getElementById("gluten").checked == false && document.getElementById("dairy").checked==false){
 		alert("No allergens were checked.");
