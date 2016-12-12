@@ -126,7 +126,11 @@ inputBox.addEventListener("click", function(){
 	
 	if ( !dairyBox.checked && !glutenBox.checked ) { // if it's not checked
 		// display error info (generally not an alert these days)
+<<<<<<< HEAD
 		document.getElementById("dairyArea").innerHTML = "Please select either dairy, gluten, or both.";
+=======
+		//alert( 'Please select either dairy, gluten, or both.' );
+>>>>>>> origin/master
 		localStorage.clear();
 		return false; // don't submit
 	}
@@ -150,6 +154,7 @@ inputBox.addEventListener("click", function(){
 		localStorage.setItem("gluten", glutenAllergen);
 	}
 	
+<<<<<<< HEAD
 	/*if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") == null ) {
 		alert("what am I doing?");
 	}
@@ -166,6 +171,20 @@ inputBox.addEventListener("click", function(){
 };
 =======
 	}
+=======
+//	if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") == null ) {
+//		alert("what am I doing?");
+//	}
+//	else if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") != null ) {
+//		alert(localStorage.getItem("gluten"));
+//	}
+//	else if ( localStorage.getItem("dairy") != null && localStorage.getItem("gluten") == null ) {
+//		alert(localStorage.getItem("dairy"));
+//	}
+//	else if ( localStorage.getItem("dairy") != null && localStorage.getItem("gluten") != null ) {
+//		alert(localStorage.getItem("dairy") + " " + localStorage.getItem("gluten"));
+//	}
+>>>>>>> origin/master
 });
 >>>>>>> origin/master
 			
