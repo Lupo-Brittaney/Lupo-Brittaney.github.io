@@ -176,42 +176,52 @@ input[id="gluten"]:checked + label span {
 
 @keyframes fadeIn {
 	10% {
+		background-color: rgba(255,255,255,0.1);
 		color: rgba(0,0,0,0.1);
 	}
 	
 	20% {
+		background-color: rgba(255,255,255,0.2);
 		color: rgba(0,0,0,0.2);
 	}
 	
 	30% {
+		background-color: rgba(255,255,255,0.3);
 		color: rgba(0,0,0,0.3);
 	}
 	
 	40% {
+		background-color: rgba(255,255,255,0.4);
 		color: rgba(0,0,0,0.4);
 	}
 	
 	50% {
+		background-color: rgba(255,255,255,0.5);
 		color: rgba(0,0,0,0.5);
 	}
 	
 	60% {
+		background-color: rgba(255,255,255,0.6);
 		color: rgba(0,0,0,0.6);
 	}
 	
 	70% {
+		background-color: rgba(255,255,255,0.7);
 		color: rgba(0,0,0,0.7);
 	}
 	
 	80% {
+		background-color: rgba(255,255,255,0.8);
 		color: rgba(0,0,0,0.8);
 	}
 	
 	90% {
+		background-color: rgba(255,255,255,0.9);
 		color: rgba(0,0,0,0.9);
 	}
 	
 	100% {
+		background-color: rgba(255,255,255,1.0);
 		color: rgba(0,0,0,1.0);
 	}
 }
