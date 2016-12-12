@@ -143,7 +143,7 @@ input[id="gluten"]:checked + label span {
 	text-align: center;
 	margin: 0 auto;
 	padding: 10px;
-	height: 100px;
+	
 	width: 40%;
 	font-size: 350%;
 	visibility: hidden;
@@ -158,7 +158,7 @@ input[id="gluten"]:checked + label span {
 	text-align: center;
 	margin: 0 auto 20px auto;
 	padding: 10px;
-	height: 100px;
+	
 	width: 40%;
 	font-size: 350%;
 	visibility: hidden;
