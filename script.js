@@ -108,10 +108,7 @@ inputBox.addEventListener("click", function(){
 		document.getElementById("glutenArea").style.visability = "hidden";
 	}
 
-	//if there is no boxes chexked
-	if (document.getElementById("gluten").checked == false && document.getElementById("dairy").checked==false){
-		alert("No allergens were checked.");
-	}
+	
 	}
 });
 
