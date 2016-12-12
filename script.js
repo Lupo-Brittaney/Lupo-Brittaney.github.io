@@ -39,8 +39,9 @@ inputBox.addEventListener("click", function(){
 				//unhide the reslults
 	    var div1 = document.getElementById("glutenArea");
 	    div1.style.transition = div1.style.transition == "all 2s";
-	    div1.style.visibility = div1.style.visibility == "visible" ? "hidden" : "visible";
-			}	
+				if(div1.style.visability = "hidden"){
+	    div1.style.visibility = "visible" ;
+			}}	
 		};
 		xhr.open('GET', 'allergenList.json');
 		xhr.send();
