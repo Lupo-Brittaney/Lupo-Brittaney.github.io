@@ -150,7 +150,7 @@ inputBox.addEventListener("click", function(){
 		localStorage.setItem("dairy", dairyAllergen);
 		localStorage.setItem("gluten", glutenAllergen);
 	}
-)};
+});
 	
 	/*if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") == null ) {
 		alert("what am I doing?");
