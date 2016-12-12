@@ -6,7 +6,7 @@ inputBox.addEventListener("click", function(){
 	//alert if there are noingredients in the text area
 	if (str==""){
 		alert("No ingredients listed");	
-	}
+	}else{
 	//turn string into array
 	var ingArray = new Array();
 	ingArray=str.split(",");
@@ -43,14 +43,15 @@ inputBox.addEventListener("click", function(){
 	} else{
 		document.getElementById("dairyArea").innerHTML = "";
 	}
+	}
 });	
 inputBox.addEventListener("click", function(){
 	//get string from textarea
 	var str= document.getElementById("ingredients").value.toLowerCase();
 	//alert if there are noingredients in the text area
-	//if (str==""){
-	//	alert("No ingredients listed");	
-	//}
+	if (str==""){
+		//alert("No ingredients listed");	
+	}else{
 	//turn string into array
 	var ingArray = new Array();
 	ingArray=str.split(",");
@@ -98,6 +99,7 @@ inputBox.addEventListener("click", function(){
 	//if there is no boxes chexked
 	if (document.getElementById("gluten").checked == false && document.getElementById("dairy").checked==false){
 		alert("No allergens were checked.");
+	}
 	}
 });
 
