@@ -47,7 +47,7 @@ inputBox.addEventListener("click", function(){
 		xhr.open('GET', 'allergenList.json');
 		xhr.send();
 	} else{
-		document.getElementById("dairyArea").innerHTML = "";
+		div1.style.visability = "hidden";
 	}
 	}
 });	
@@ -103,7 +103,7 @@ inputBox.addEventListener("click", function(){
 	}
 
 	else{
-		document.getElementById("glutenArea").innerHTML = "";
+		div2.style.visability = "hidden";
 	}
 
 	//if there is no boxes chexked
