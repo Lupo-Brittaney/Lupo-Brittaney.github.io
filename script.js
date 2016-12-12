@@ -165,13 +165,12 @@ inputBox.addEventListener("click", function(){
 		localStorage.setItem("gluten", glutenAllergen);
 	}
 	
-	function fadeIn() {
-		var div = document.getElementById("dairyArea");
-
-		if (div.style.animationPlayState != "running")
-			div.style.animationPlayState = "running";
+	function fadeIn() {			
+		if (document.getElementById("dairyArea").style.animationPlayState != "running") {
+			document.getElementById("dairyArea").style.animationPlayState = "running";
+		}
 		else {
-			div.style.animationPlayState="paused";
+			document.getElementById("dairyArea").style.animationPlayState = "paused";
 		}
 	}
 });
