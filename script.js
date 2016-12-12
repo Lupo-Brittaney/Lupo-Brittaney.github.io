@@ -36,6 +36,10 @@ inputBox.addEventListener("click", function(){
 				var div1 = document.getElementById("dairyArea");
 				div1.innerHTML = message;
 	    		div1.style.backgroundColor = div1.style.backgroundColor == "#ffe6e1";
+				//unhide the reslults
+	    var div1 = document.getElementById("glutenArea");
+	    div1.style.transition = div1.style.transition == "all 2s";
+	    div1.style.visibility = div1.style.visibility == "visible" ? "hidden" : "visible";
 			}	
 		};
 		xhr.open('GET', 'allergenList.json');
@@ -85,6 +89,9 @@ inputBox.addEventListener("click", function(){
 				var div2 = document.getElementById("glutenArea");
 				div2.innerHTML = message;
 	    		div2.style.backgroundColor = div2.style.backgroundColor == "#ffe6e1";
+				 var div2 = document.getElementById("dairyArea");
+	    div2.style.transition = div2.style.transition == "all 2s";
+	    div2.style.visibility = div2.style.visibility == "visible" ? "hidden" : "visible";
 	    	}
 		};	
 
@@ -121,14 +128,9 @@ window.onload = function() {
 			
 //function submit() {
 inputBox.addEventListener("click", function(){
-	//unhide the reslults
-	    var div1 = document.getElementById("glutenArea");
-	    div1.style.transition = div1.style.transition == "all 2s";
-	    div1.style.visibility = div1.style.visibility == "visible" ? "hidden" : "visible";
+	
 	    
-	    var div2 = document.getElementById("dairyArea");
-	    div2.style.transition = div2.style.transition == "all 2s";
-	    div2.style.visibility = div2.style.visibility == "visible" ? "hidden" : "visible";
+	   
 	    
 	// get reference to required checkbox
 	var dairyBox = document.getElementById("dairy");
