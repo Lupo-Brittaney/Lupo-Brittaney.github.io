@@ -18,7 +18,7 @@ inputBox.addEventListener("click", function(){
 		//This is where the arrays that are saved in JSON files are requested and returned to the app
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function(){
-			if (xhr.readyState === 4){
+			if (xhr.readyState === 4 && xhr.status == 200){
 				var allergNames = JSON.parse(xhr.responseText);
 				//compareFunction(allergNames, "dairy");
 				for(var i=0; i<allergNames.length; i++){
@@ -67,7 +67,7 @@ inputBox.addEventListener("click", function(){
 		//This is where the arrays that are saved in JSON files are requested and returned to the app
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function(){
-			if (xhr.readyState === 4){
+			if (xhr.readyState === 4 && xhr.status == 200){
 				var allergNames = JSON.parse(xhr.responseText);
 				//compareFunction(allergNames, "gluten");
 				for(var i=0; i<allergNames.length; i++){
