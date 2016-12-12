@@ -99,6 +99,7 @@ input[id="gluten"]:checked + label span {
 	animation-name: fadeIn;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
+	animation-play-state: runnning;
 }
 
 #inputBox {
