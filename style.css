@@ -61,10 +61,13 @@ input[id="dairy"] + label span {
 	width: 130px;
 	margin: 0 65px 0 0;
 	background:URL('dairy_icon.png') left top no-repeat;
+	transition: all 0.8s;
+
 }
 
 input[id="dairy"]:checked + label span {
 	background:URL('dairy_icon_checked.png') no-repeat;
+	transition: all 0.8s;
 }
 
 input[id="gluten"] + label span {
@@ -73,10 +76,13 @@ input[id="gluten"] + label span {
 	width: 130px;
 	margin: 0 0 0 65px;
 	background:URL('gluten_icon.png') left top no-repeat;
+	transition: all 0.8s;
+
 }
 
 input[id="gluten"]:checked + label span {
 	background:URL('gluten_icon_checked.png') no-repeat;
+	transition: all 0.8s;
 } 
 
 #explanation {
