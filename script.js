@@ -119,7 +119,7 @@ window.onload = function() {
 };
 			
 //function submit() {
-inputBox.addEventListener("click", function(){
+inputBox.addEventListener("click", function()){
 	// get reference to required checkbox
 	var dairyBox = document.getElementById("dairy");
 	var glutenBox = document.getElementById("gluten");
@@ -150,6 +150,7 @@ inputBox.addEventListener("click", function(){
 		localStorage.setItem("dairy", dairyAllergen);
 		localStorage.setItem("gluten", glutenAllergen);
 	}
+};
 	
 	/*if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") == null ) {
 		alert("what am I doing?");
@@ -164,7 +165,7 @@ inputBox.addEventListener("click", function(){
 		alert(localStorage.getItem("dairy") + " " + localStorage.getItem("gluten"));
 <<<<<<< HEAD
 	}*/
-};
+
 
 //	if ( localStorage.getItem("dairy") == null && localStorage.getItem("gluten") == null ) {
 //		alert("what am I doing?");
@@ -179,7 +180,6 @@ inputBox.addEventListener("click", function(){
 //		alert(localStorage.getItem("dairy") + " " + localStorage.getItem("gluten"));
 //	}
 
-});
 
 			
 /*function showStorage() {
@@ -197,6 +197,5 @@ inputBox.addEventListener("click", function(){
 	}
 <<<<<<< HEAD
 }*/
-=======
 };
->>>>>>> origin/master
+
