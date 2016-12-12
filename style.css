@@ -92,6 +92,7 @@ input[id="gluten"]:checked + label span {
 
 #ingredients {
 	display: block;
+	font-family: 'Calibri';
 	font-size: 400%;
 	margin: 0 auto;
 	width: 80%;
