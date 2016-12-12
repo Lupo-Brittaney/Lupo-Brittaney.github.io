@@ -96,6 +96,7 @@ inputBox.addEventListener("click", function(){
 			div2.style.transition = div2.style.transition == "all 2s";
 	    			if(div2.style.visibility = "hidden"){
 	    				div2.style.visibility = "visible" ;
+					div2.style.animationPlayState = "running";
 				}
 	    		}
 		};	
